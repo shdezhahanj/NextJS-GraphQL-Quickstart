@@ -1,0 +1,33 @@
+- [x] formatter - eslint/prettier
+- [x] husky
+- [x] Multi language
+- [x] styles and sass and tailwind configs
+- [x] Multi theme and color pallet
+- [x] typography
+- [x] header sticky
+- [x] buttons / icon button
+- [x] language switcher
+- [x] theme switcher
+- [X] react hook form (support for nextjs 15)
+- [X] inputs
+- [X] redux-toolkit (support for nextjs 15)
+- [X] pwa
+- [X] graphql and prisma
+- [X] make main layout separate
+- [X] main page ui
+- [X] read me
+- [ ] deploy on vercle
+- [ ] footer
+- [ ] github profile
+- [X] licence
+- 
+---
+- [ ] test configs
+- [ ] auth
+- [ ] animation
+- [ ] add farsi font
+- [ ] rtl farsi
+- [ ] deploy srotybook on vercle
+- [ ] backend multi language
+- [ ] framer motion
+- [ ] Storybook (support for nextjs 15)

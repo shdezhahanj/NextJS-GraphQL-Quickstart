@@ -1,0 +1,19 @@
+@layer base {
+  html[data-theme='dark'] {
+    --background: #1e1f25;
+    --background-component: #131517;
+    --primary: #50bfe8;
+    --secondary: #464f56;
+    --accent: #70d3ba;
+    --input: #1c1c1c;
+    --backdrop: #a2a2a2;
+    --danger: #fe8182;
+    --warning: #ff9933;
+    --success: #60d6a4;
+
+    --border-regular: #343434;
+
+    --font-regular: #e4ebf5e6;
+    --font-placeholder: #727272;
+  }
+}

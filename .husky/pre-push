@@ -1,0 +1,25 @@
+echo '👷🔨 Building the magic... Here we go! 👷🔨'
+
+npm run build ||
+(
+    echo '❌ Oh no! Build failed! 🚨
+            Call Bob! We need to fix this mess! 🔧'
+    false;
+)
+
+
+
+
+echo '🚨 Validating the branch name before pushing the code'
+
+local_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+valid_branch_regex="^(feature|bugfix|improvement|library|prerelease|release|hotfix)\/[a-z0-9._-]+$"
+
+if [[ ! $local_branch =~ $valid_branch_regex ]]
+then
+    echo "❌🚫 Oops! Your branch name doesn't follow our conventions. Please use one of the following prefixes: feature, bugfix, improvement, library, prerelease, release, or hotfix. Let's keep our workflow smooth and consistent! 🎸"
+    exit 1
+fi
+
+exit 0

@@ -1,0 +1,19 @@
+@layer base {
+  html {
+    --background: #ffffff;
+    --background-component: #dee7f2;
+    --primary: #50bfe8;
+    --secondary: #464f56;
+    --accent: #70d3ba;
+    --input: #f9f9f9;
+    --backdrop: #a2a2a2;
+    --danger: #fe8182;
+    --warning: #ff9933;
+    --success: #60d6a4;
+
+    --border-regular: #e0e0e0;
+
+    --font-regular: #303030;
+    --font-placeholder: #727272;
+  }
+}

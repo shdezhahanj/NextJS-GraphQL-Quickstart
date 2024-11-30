@@ -1,0 +1,68 @@
+@use './theme' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+}
+body {
+  background: var(--background);
+  --scroll: -5;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  font-family: var(--font-geist-sans), serif;
+  color: var(--font-regular);
+}
+
+/* English */
+:lang(en) {
+  font-family: var(--font-geist-sans), serif;
+}
+
+.loading-balls {
+  display: grid;
+  grid-template-columns: repeat(5, 10px);
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  .ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: wave 1.5s ease-in-out infinite;
+    background-color: var(--primary);
+  }
+
+  .ball:nth-child(2) {
+    animation-delay: -0.2s;
+    background-color: var(--accent);
+  }
+
+  .ball:nth-child(3) {
+    animation-delay: -0.4s;
+    background-color: var(--primary);
+  }
+
+  .ball:nth-child(4) {
+    animation-delay: -0.6s;
+    background-color: var(--accent);
+  }
+
+  .ball:nth-child(5) {
+    animation-delay: -0.8s;
+    background-color: var(--primary);
+  }
+
+  @keyframes wave {
+    0%,
+    100% {
+      transform: translateY(8px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+}

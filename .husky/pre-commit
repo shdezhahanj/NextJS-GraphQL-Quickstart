@@ -1,0 +1,21 @@
+
+echo '🏗️👷 Styling, testing, and building your project... Let’s roll!'
+
+# Check Prettier standards
+npm run format:fix ||
+(
+    echo '🤢🤮 Yikes! Your code looks like a sushi disaster! 🍣
+            Prettier Check Failed. Run npm run format and tidy it up!'
+    false;
+)
+
+# Check ESLint Standards
+npm run lint ||
+(
+    echo '😤🚫 Not today! Your code needs a serious makeover! 💄
+            ESLint Check Failed. Fix the errors above and try again!'
+    false;
+)
+
+# If everything passes... Now we can commit
+echo '✅ You did it! Committing now... 🎉'
