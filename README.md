@@ -52,7 +52,7 @@ npx prisma generate
 3. Run migrations to set up your database:
 
 ```bash
-npx prisma migrate init
+npx prisma migrate dev
 ```
 
 4️⃣ Seed the database (optional)
@@ -74,7 +74,7 @@ Visit your app at http://localhost:3000! 🎉
 ### 🌐 Demo
 
 You can check out a live demo of this project deployed on Vercel:
-👉 Live Demo
+👉 [Live Demo](https://nextjs-graphql-quickstart.vercel.app/)
 
 ### 📜 Scripts
 

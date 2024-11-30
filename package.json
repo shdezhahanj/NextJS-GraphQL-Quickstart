@@ -10,7 +10,8 @@
     "format": "prettier --check .",
     "format:fix": "prettier --write --list-different .",
     "type-check": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@apollo/client": "^3.11.10",
