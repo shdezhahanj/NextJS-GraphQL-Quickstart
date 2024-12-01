@@ -8,8 +8,6 @@ npm run build ||
 )
 
 
-
-
 echo '🚨 Validating the branch name before pushing the code'
 
 local_branch="$(git rev-parse --abbrev-ref HEAD)"

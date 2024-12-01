@@ -4,16 +4,16 @@ import { SentencesMock } from './mock-data';
 const prisma = new PrismaClient();
 
 async function main() {
-  await prisma.sentence.createMany({
-    data: SentencesMock,
-  });
+	await prisma.sentence.createMany({
+		data: SentencesMock,
+	});
 }
 
 main()
-  .catch(() => {
-    process.exit(1);
-  })
+	.catch(() => {
+		process.exit(1);
+	})
 
-  .finally(async () => {
-    await prisma.$disconnect();
-  });
+	.finally(async () => {
+		await prisma.$disconnect();
+	});

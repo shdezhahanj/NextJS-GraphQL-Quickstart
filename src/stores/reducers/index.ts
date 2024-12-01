@@ -1,7 +1,7 @@
-import { combineReducers } from '@reduxjs/toolkit';
 import mainSlice from '@/stores/reducers/mainSlice';
+import { combineReducers } from '@reduxjs/toolkit';
 
 const rootReducer = combineReducers({
-  mainStore: mainSlice.reducer,
+	mainStore: mainSlice.reducer,
 });
 export default rootReducer;

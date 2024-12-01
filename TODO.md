@@ -1,4 +1,4 @@
-- [x] formatter - eslint/prettier
+- [x] formatter - biome
 - [x] husky
 - [x] Multi language
 - [x] styles and sass and tailwind configs

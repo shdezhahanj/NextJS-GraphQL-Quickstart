@@ -1,8 +1,0 @@
-*.d.ts
-next.config.js
-Icons.tsx
-node_modules
-coverage
-.next
-public/sw*
-public/swe-worker*

@@ -1,28 +1,28 @@
+import type { AppState } from '@/stores/store';
 import { createSelector, createSlice } from '@reduxjs/toolkit';
-import { AppState } from '@/stores/store';
 
 type MainState = {
-  sentences?: string[];
+	sentences?: string[];
 };
 
 const initialState: MainState = {
-  sentences: undefined,
+	sentences: undefined,
 };
 
 const mainSlice = createSlice({
-  name: 'mainSlice',
-  initialState,
-  reducers: {
-    changeTopClassLiteralDomains: (state, action) => {
-      state.sentences = action.payload;
-    },
-  },
+	name: 'mainSlice',
+	initialState,
+	reducers: {
+		changeTopClassLiteralDomains: (state, action) => {
+			state.sentences = action.payload;
+		},
+	},
 });
 const selectMainSlice = (state: AppState) => state.mainStore;
 
 const selectSentences = createSelector(
-  selectMainSlice,
-  (state: MainState) => state.sentences,
+	selectMainSlice,
+	(state: MainState) => state.sentences,
 );
 
 export const { changeTopClassLiteralDomains } = mainSlice.actions;

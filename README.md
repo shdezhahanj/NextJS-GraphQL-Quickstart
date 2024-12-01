@@ -16,7 +16,7 @@ Welcome to the Next.js + GraphQL Quickstart! This boilerplate is your go-to solu
 - 📝 React Hook Form : Simplify form validation and management with this lightweight library.
 - 🔒 TypeScript : Ensure your codebase is reliable, scalable, and type-safe with TypeScript.
 - 🐾 Husky & Commitlint : Maintain a clean Git history and enforce commit standards for better collaboration.
-- ⚙️ Pre-configured Linting & Formatting : Keep your codebase consistent with ESLint, Prettier, and TailwindCSS plugins.
+- ⚙️ Pre-configured Linting & Formatting : Maintain a clean and consistent codebase effortlessly with Biome, a unified toolchain for linting, formatting, and organizing imports.
 
 ---
 
@@ -83,8 +83,8 @@ Here are some useful scripts to manage your project:
 - `npm run dev` - Start the development server with TurboPack.
 - `npm run build` - Build the application for production.
 - `npm run start` - Start the production server.
-- `npm run lint` - Run ESLint for code linting.
-- `npm run format` - Check code formatting using Prettier.
+- `npm run lint` - Run Biome for code linting.
+- `npm run format` - Format your code using Biome.
 - `npm run format:fix` - Auto-format your code.
 - `npm run type-check` - Perform a TypeScript type check.
 - `npm run prepare` - Set up Husky for Git hooks.

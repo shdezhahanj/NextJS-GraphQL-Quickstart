@@ -1,3 +1,3 @@
 self.addEventListener('fetch', () => {
-  // Custom fetch handling logic
+	// Custom fetch handling logic
 });

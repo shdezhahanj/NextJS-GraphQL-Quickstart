@@ -1,10 +1,10 @@
 export const LANGUAGES = [
-  {
-    text: 'EN',
-    value: 'en',
-  },
-  {
-    text: 'NL',
-    value: 'nl',
-  },
+	{
+		text: 'EN',
+		value: 'en',
+	},
+	{
+		text: 'NL',
+		value: 'nl',
+	},
 ];

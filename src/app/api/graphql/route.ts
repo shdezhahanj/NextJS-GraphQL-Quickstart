@@ -1,18 +1,18 @@
-import { createYoga } from 'graphql-yoga';
 import { schema } from '@/graphql/schema';
+import { createYoga } from 'graphql-yoga';
 
 interface NextContext {
-  params: Promise<Record<string, string>>;
+	params: Promise<Record<string, string>>;
 }
 
 const { handleRequest } = createYoga<NextContext>({
-  schema,
-  graphqlEndpoint: '/api/graphql',
-  fetchAPI: { Response },
+	schema,
+	graphqlEndpoint: '/api/graphql',
+	fetchAPI: { Response },
 });
 
 export {
-  handleRequest as GET,
-  handleRequest as POST,
-  handleRequest as OPTIONS,
+	handleRequest as GET,
+	handleRequest as POST,
+	handleRequest as OPTIONS,
 };
