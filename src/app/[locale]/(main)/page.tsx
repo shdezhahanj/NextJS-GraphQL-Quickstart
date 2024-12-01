@@ -1,7 +1,9 @@
 'use client';
 import { Icon, Loading, Typography } from '@/components';
 import { defaultButtonClasses } from '@/components/atoms/Button/Button';
+import IconBox from '@/components/molecules/IconBox/IconBox';
 import { GetSentences } from '@/graphql/gql/main-gql';
+import { FEATURES } from '@/utils/constants';
 import { useQuery } from '@apollo/client';
 import classNames from 'classnames';
 import { useTranslations } from 'next-intl';
@@ -17,7 +19,7 @@ export default function HomePage() {
 			<Typography.Title level="h1">{t('title')}</Typography.Title>
 			<Typography.Paragraph>{t('description')}</Typography.Paragraph>
 			{!loading ? (
-				<div className="mx-auto flex max-w-lg flex-col gap-6 rounded-xl border border-regular bg-background-component p-10">
+				<div className="mx-auto w-full flex flex-col gap-6 rounded-xl border border-regular bg-background-component p-10">
 					<Typography.Paragraph className="text-lg">
 						{data?.sentence?.quote}
 					</Typography.Paragraph>
@@ -28,11 +30,17 @@ export default function HomePage() {
 			) : (
 				<Loading />
 			)}
+
+			<div className="grid  grid-cols-2 sm:grid-cols-4 gap-4">
+				{FEATURES.map((item) => (
+					<IconBox key={item.id} icon={item.icon} title={item.title} />
+				))}
+			</div>
 			<a
 				href="https://github.com/shdezhahanj/nextjs-graphql-quickstart"
 				target="_blank"
 				className={classNames(
-					'mx-auto w-mm cursor-pointer justify-between',
+					'mx-auto cursor-pointer justify-between',
 					defaultButtonClasses.outlined.primary,
 				)}
 				rel="noreferrer"
