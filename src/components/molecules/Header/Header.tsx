@@ -39,7 +39,7 @@ export const Header: FC = () => {
 				<div className="flex gap-2">
 					<Image src="/assets/svg/logo.svg" alt="logo" width={24} height={24} />
 					<Typography.Text className="font-medium">
-						Nextjs GraphQL Quickstart
+						Nextjs Quickstart
 					</Typography.Text>
 				</div>
 				<div className="flex gap-4">

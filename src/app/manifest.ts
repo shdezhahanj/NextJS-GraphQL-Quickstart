@@ -2,10 +2,10 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
 	return {
-		name: 'Next.js Graphql quickstart PWA',
+		name: 'Next.js quickstart PWA',
 		short_name: 'NextPWA',
 		description:
-			'A fast, offline-capable Progressive Web App (PWA) built with Next.js and GraphQL for optimal performance, SEO, and user experience across all devices.',
+			'A fast, offline-capable Progressive Web App (PWA) built with Next.js for optimal performance, SEO, and user experience across all devices.',
 		start_url: '/',
 		display: 'standalone',
 		orientation: 'portrait',

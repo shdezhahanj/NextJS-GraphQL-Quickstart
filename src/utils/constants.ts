@@ -18,16 +18,6 @@ export const FEATURES: IFeature[] = [
 		title: 'Next.js 15',
 	},
 	{
-		id: 2,
-		icon: 'GraphQl',
-		title: 'GraphQL',
-	},
-	{
-		id: 3,
-		icon: 'Prisma',
-		title: 'Prisma',
-	},
-	{
 		id: 4,
 		icon: 'React',
 		title: 'React',

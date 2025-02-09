@@ -7,9 +7,6 @@ Welcome to the Next.js + GraphQL Quickstart! This boilerplate is your go-to solu
 ### 🎯 Features
 
 - 🌐 Next.js 15 : Experience the power of the new App Router for advanced routing and rendering capabilities.
-- 🔗 Apollo Client : A powerful GraphQL client for seamless API consumption and state management.
-- 🛠️ GraphQL Yoga & Pothos : Simplify API creation with schema-first GraphQL server development.
-- 📦 Prisma ORM : Effortlessly manage database schemas and migrations with Prisma.
 - 🎨 Tailwind CSS with Sass : Build stunning, responsive UIs rapidly using Tailwind's utility-first approach, with the flexibility of Sass for advanced styling.
 - 🖍️ Multi-Theme Support : Easily toggle between light, dark, or custom themes to enhance the user experience.
 - 🈴 Multi-Language Support : Integrate internationalization with `next-intl for a global-ready application.

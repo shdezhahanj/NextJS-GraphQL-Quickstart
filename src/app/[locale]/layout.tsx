@@ -8,9 +8,9 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 export const metadata: Metadata = {
-	title: 'Next js GraphQL Quickstart',
+	title: 'Next js Quickstart',
 	description:
-		'Next.js GraphQL Quickstart is a modern, full-stack web application template designed to help you get started quickly with Next.js, GraphQL, Prisma, Apollo Client, and Redux Toolkit. This project offers a powerful, scalable foundation for building dynamic and performant web applications using the latest technologies.',
+		'Next.js Quickstart is a modern, full-stack web application template designed to help you get started quickly with Next.js and Redux Toolkit. This project offers a powerful, scalable foundation for building dynamic and performant web applications using the latest technologies.',
 };
 
 interface LayoutProps {
